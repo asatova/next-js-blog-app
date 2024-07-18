@@ -6,8 +6,8 @@ import Image from 'next/image'
 
 export const Navbar = () => {
     return (
-        <nav className='bg-gray-100 text-zinc-900 p-4'>
-            <div className='container mx-auto flex justify-between items-center'>
+        <nav className='container mx-auto flex justify-center items-center bg-gray-100 text-zinc-900 p-4'>
+            <div className='container mx-auto flex justify-start items-end'>
                 <Image
                     src="/logo.png"
                     alt="Picture of the author"
@@ -15,6 +15,7 @@ export const Navbar = () => {
                     height={100}
                     quality={100}
                 />
+            </div>
         <div className="hidden md:flex text-white">
            <Link href="/" className="mx-2 text-black"> Home</Link>
 
@@ -25,6 +26,9 @@ export const Navbar = () => {
         <div>
             <Link href="/contact" className="mx-2 text-black">Contact</Link>
          </div>
+                <div>
+                    <Link href="/news" className="mx-2 text-black">News</Link>
+
             </div>
         </nav>
     )
