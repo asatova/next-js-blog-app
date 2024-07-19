@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export const NavbarSecondLayer = () => {
     return (
-        <nav className='container mx-auto flex justify-start items-center bg-gray-100 text-zinc-900 p-4 gap-25'>
+        <nav className='container mx-auto flex justify-start items-center bg-gray-100 text-zinc-900 p-4 gap-16'>
 
             <div className="hidden md:flex text-white gap-20">
                 <Link href="/green-projects" className="mx-2 text-black"> GIZ Green projects</Link>

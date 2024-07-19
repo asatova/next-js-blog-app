@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
+import About from "../app/about";
 
 
 
@@ -21,7 +21,14 @@ export const Navbar = () => {
 
         </div>
         <div>
-            <Link href="/about" className="mx-2 text-black">About</Link>
+            <Link
+                href={{
+                    pathname: '/about'
+
+                }}
+            >
+                About us
+            </Link>
         </div>
         <div>
             <Link href="/contact" className="mx-2 text-black">Contact</Link>
