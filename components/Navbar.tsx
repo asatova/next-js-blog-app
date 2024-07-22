@@ -17,12 +17,12 @@ export const Navbar = () => {
                 />
               </a>
             </div>
-        <div className="hidden md:flex text-white">
-           <Link href="/" className="mx-2 text-black"> Home</Link>
+        <div className="hidden md:flex text-white w-28">
+           <Link href="/" className="text-black "> Home</Link>
         </div>
-            <div><Link href={{  pathname: '/about'}} > About us</Link></div>
-            <div><Link href={{  pathname: '/contact'}} > Contact</Link></div>
-            <div><Link href={{  pathname: '/news'}} > News</Link></div>
+            <div className='w-28'><Link href={{  pathname: '/about'}} > About us</Link></div>
+            <div className='w-28'><Link href={{  pathname: '/contact'}} > Contact</Link></div>
+            <div className='w-28'><Link href={{  pathname: '/news'}} > News</Link></div>
 
         </nav>
     )
