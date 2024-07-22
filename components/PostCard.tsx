@@ -10,7 +10,7 @@ import { sanitize } from 'isomorphic-dompurify';
 
 export default function PostCard({ post }: { post: Post }) {
   return (
-    <div>
+      <div>
       {post.metadata.hero?.imgix_url && (
         <Link href={`/posts/${post.slug}`}>
           <Image
